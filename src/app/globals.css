@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/*
+ * FLAMOB — Design tokens.
+ * Toute couleur de l'interface passe par ces jetons (classes bg-navy, text-muted, border-line…).
+ * Les couleurs sémantiques (success/warning/danger) ne servent qu'aux états, jamais à la décoration.
+ */
+@theme {
+  --font-sans: "Manrope Variable", "Manrope", ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Marque */
+  --color-navy: #10243A;
+  --color-navy-800: #163049;
+  --color-navy-700: #174B73;
+  --color-navy-50: #EEF3F8;
+  --color-cyan: #20B8C9;
+  /* Cyan foncé : variante accessible (contraste AA) pour le texte et les liens sur fond clair. */
+  --color-cyan-700: #0B7480;
+  --color-cyan-100: #D3F1F4;
+  --color-cyan-50: #ECF9FA;
+
+  /* Surfaces et texte */
+  --color-canvas: #F5F7FA;
+  --color-surface: #FFFFFF;
+  --color-ink: #10243A;
+  --color-ink-soft: #334155;
+  --color-muted: #64748B;
+  --color-line: #E3E8EF;
+  --color-line-strong: #CBD5E1;
+
+  /* Sémantique */
+  --color-success: #157F3B;
+  --color-success-bg: #EAF7EF;
+  --color-warning: #A15C07;
+  --color-warning-bg: #FDF4E3;
+  --color-danger: #B42318;
+  --color-danger-bg: #FDEEEC;
+  --color-info: #174B73;
+  --color-info-bg: #EEF3F8;
+
+  --radius-card: 1rem;
+  --radius-control: 0.75rem;
+  --shadow-card: 0 1px 2px rgb(16 36 58 / 0.06);
+  --shadow-raised: 0 8px 24px -12px rgb(16 36 58 / 0.25);
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "tnum" 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { letter-spacing: -0.015em; }
+  :focus-visible { outline: 2px solid var(--color-cyan-700); outline-offset: 2px; }
+  ::selection { background: var(--color-cyan-100); }
+  input, select, textarea, button { font: inherit; }
+  dialog::backdrop { background: rgb(16 36 58 / 0.45); }
+}
+
+@utility tabular { font-variant-numeric: tabular-nums; }
+@utility pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0px); }

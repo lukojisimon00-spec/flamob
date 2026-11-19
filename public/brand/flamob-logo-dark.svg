@@ -1,0 +1,11 @@
+<!-- Concept v1. Le mot-symbole utilise Manrope ExtraBold : vectoriser le texte avant tout usage imprimé. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72">
+  <rect width="300" height="72" rx="12" fill="#10243A"/>
+  <g transform="translate(8 4)">
+    <path fill="#FFFFFF" d="M19 9H51L44.5 21H26L23 27H31L12 58L17 34H9Z"/>
+    <path fill="#20B8C9" d="M34 27H53L46.5 38.5H27.6Z"/>
+    <path fill="#20B8C9" d="M28.5 42H41.5L21 60Z"/>
+    <g fill="none" stroke="#20B8C9" stroke-width="3.6" stroke-linecap="round"><path d="M52 8A5 5 0 0 1 57 13"/><path d="M52.5 2A10.5 10.5 0 0 1 63 12.5"/></g>
+  </g>
+  <text x="84" y="50" font-family="Manrope, 'Manrope Variable', Arial, sans-serif" font-weight="800" font-size="38" letter-spacing="-0.6"><tspan fill="#FFFFFF">FLA</tspan><tspan fill="#20B8C9">MOB</tspan></text>
+</svg>
