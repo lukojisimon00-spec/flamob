@@ -1,8 +1,7 @@
 # Décisions techniques
 
-**D-001 — Sous-dossier `flamob/` dans ce dépôt.** Le dépôt contenait uniquement un skill Remotion (vidéo), sans
-code Flamob. Pour ne rien détruire, Flamob est un projet autonome dans `flamob/`. Il pourra être déplacé dans
-un dépôt dédié sans modification.
+**D-001 — Dépôt dédié.** Flamob a d'abord été développé dans un sous-dossier d'un autre dépôt (sans rapport),
+puis extrait avec son historique dans ce dépôt dédié `flamob`, à la racine.
 
 **D-002 — Next.js + TypeScript + Tailwind.** Recommandé par le cahier des charges ; rendu serveur = pages légères
 pour smartphones d'entrée de gamme (≈105–115 kB de JS au premier chargement).

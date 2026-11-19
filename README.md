@@ -12,6 +12,7 @@ trésoreries et commissions sont **simulés**. Aucune somme réelle n'est dépla
 Prérequis : Node.js 20+ (testé avec Node 22).
 
 ```bash
+git clone https://github.com/lukojisimon00-spec/flamob.git
 cd flamob
 npm install
 cp .env.example .env.local     # FLAMOB_DEMO_MODE=true par défaut
